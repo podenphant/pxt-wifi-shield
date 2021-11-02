@@ -1,6 +1,6 @@
 # Muselab IOT Shield
 
-A PXT library for Muse IOT Shield
+A PXT library for Muse IOT Shield (OH!Tech)
 
 ## Blocks
 
