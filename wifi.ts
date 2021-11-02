@@ -59,7 +59,7 @@ namespace MuseIoT {
   //% blockGap=7
   //% group="Booster"
   export function initializeWifi(): void {
-    serial.redirect(SerialPin.P16, SerialPin.P8, BaudRate.BaudRate115200);
+    serial.redirect(SerialPin.P12, SerialPin.P8, BaudRate.BaudRate115200);
     MuseOLED.init()
 
     serial.onDataReceived(serial.delimiters(Delimiters.NewLine), () => {
