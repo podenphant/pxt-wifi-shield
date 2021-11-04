@@ -292,7 +292,7 @@ namespace MuseIoT {
   //% weight=80
   //% group="WIFI"
   export function setWifi(ssid: string, pwd: string): void {
-    console.log("setWifi", ssid, pwd);
+    console.log("setWifi" + ssid +pwd);
     serial.writeLine("(AT+wifi?ssid=" + ssid + "&pwd=" + pwd + ")");
   }
 
@@ -371,7 +371,7 @@ namespace MuseIoT {
   //% weight=54
   //% group="Booster"
   export function initializeWifiNormal(): void {
-   console.log("setWifi", ssid, pwd);
+   console.log("initializeWifiNormal");
     serial.redirect(SerialPin.P12, SerialPin.P8, BaudRate.BaudRate115200);
   }
 
