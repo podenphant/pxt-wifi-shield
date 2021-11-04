@@ -371,7 +371,7 @@ namespace MuseIoT {
   //% group="Booster"
   export function initializeWifiNormal(): void {
    console.log("initializeWifiNormal");
-    serial.redirect(SerialPin.P18, SerialPin.P12, BaudRate.BaudRate115200);
+    serial.redirect(SerialPin.P8, SerialPin.P12, BaudRate.BaudRate115200);
   }
 
   // -------------- 5. Advanced Wifi ----------------
