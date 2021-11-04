@@ -59,6 +59,7 @@ namespace MuseIoT {
   //% blockGap=7
   //% group="Booster"
   export function initializeWifi(): void {
+    console.log("initializeWifi");
     serial.redirect(SerialPin.P12, SerialPin.P8, BaudRate.BaudRate115200);
     MuseOLED.init()
 
@@ -291,6 +292,7 @@ namespace MuseIoT {
   //% weight=80
   //% group="WIFI"
   export function setWifi(ssid: string, pwd: string): void {
+    console.log("setWifi", ssid, pwd);
     serial.writeLine("(AT+wifi?ssid=" + ssid + "&pwd=" + pwd + ")");
   }
 
@@ -369,7 +371,8 @@ namespace MuseIoT {
   //% weight=54
   //% group="Booster"
   export function initializeWifiNormal(): void {
-    serial.redirect(SerialPin.P16, SerialPin.P8, BaudRate.BaudRate115200);
+   console.log("setWifi", ssid, pwd);
+    serial.redirect(SerialPin.P12, SerialPin.P8, BaudRate.BaudRate115200);
   }
 
   // -------------- 5. Advanced Wifi ----------------
